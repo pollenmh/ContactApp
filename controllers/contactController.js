@@ -19,10 +19,11 @@ router.post('/', (req, res) => {
 
 function insertRecord(req, res) {
     var contact = new Contact();
-    contact.fullName = req.body.fullName;
+    contact.firstName = req.body.firstName;
+    contact.lastName = req.body.lastName;
     contact.email = req.body.email;
-    contact.mobile = req.body.mobile;
-    contact.city = req.body.city;
+    contact.phoneNumber = req.body.phoneNumber;
+    contact.status = req.body.status;
     contact.save((err, doc) => {
         if (!err)
             res.redirect('contact/list');
