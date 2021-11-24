@@ -1,5 +1,5 @@
 # ContactApp
-Basic contact app using NodeJs , MongoDB and HBS
+Basic contact app using NodeJs , MongoDB and HBS (HandleBars)
 
 Solution Structure - 
 Models
